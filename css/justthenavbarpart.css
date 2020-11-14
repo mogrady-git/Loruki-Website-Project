@@ -1,0 +1,134 @@
+/* Search for font you like online from google fonts@
+click the @import version and copy into the css 
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+</style>
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,300&display=swap');
+
+
+/* Create a Reset; use the universal selector [*] */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+/* This removes the default elements the browser pulls in */
+
+body {
+    font-family: lato, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1,
+h2 {
+    font-weight: 300;
+    line-height: 1.2;
+    margin: 10px,2px;
+    /* Margin top/bottom, left/right */
+}
+
+p {
+    margin: 10px 0;
+}
+
+/* add images a width of 100% which will keep the images inbetween their containers and they wont burst out */
+img {
+    width: 100%;
+}
+
+/* thats the base styles for now. Now we can start on the nav bar */
+
+/* Added in the following order */
+/* #1 */
+.navbar {                                   
+    background-color: #047aed;                                      
+    color: white;
+    height: 70px;
+}
+
+/* #5 */
+.navbar ul {
+    display:  flex;
+}
+
+/* #6 */
+
+.navbar a {
+    color: #fff;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+/* #6  : setting up the on over */
+
+.navbar a:hover {
+    border-bottom: 2px #fff solid;
+}
+
+/* stopped at 16:23 */
+
+
+/* #4 */
+.navbar .flex {
+    justify-content: space-between;
+}
+
+/* #2 */
+/* now need a custom container for the nav bar so it renders properly*/
+.container {
+    max-width: 1100px;
+    /* now here's the part where we set it in the middle */
+    margin: 0 auto;
+    /* 0 top and bottom, auto on left and right */
+    overflow: auto; 
+    /* this get's rid of space that may overflow */
+    padding: 0 40px;
+    /* NO COMMAS INBETWEEN OR WONT WORK, LIKE BELOW!*/
+}
+
+/* .container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+} */
+
+/* now go to html and add a utility class of flex to make flexbox to turn into a flew column */
+
+/* 3 */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+/* this is the nav bar complete */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
